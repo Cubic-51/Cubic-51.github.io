@@ -1,0 +1,34 @@
+/* Removes default list styling */
+ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Recommended for float layouts */
+  background-color: #333; /* Dark background color */
+}
+
+/* Styles list items (for a horizontal layout) */
+li {
+  float: left; /* Aligns items horizontally */
+}
+
+/* Styles the links inside the list items */
+li a {
+  display: block; /* Makes the entire link area clickable */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Removes underlines from links */
+}
+
+/* Change background color of links on hover */
+li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Adds a color to the active/current link (you'd add the 'active' class to the current page's link in HTML) */
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
