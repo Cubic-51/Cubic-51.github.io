@@ -1,25 +1,45 @@
-/* Remove default list styles */
-.navbar ul {
-  list-style-type: none; /* Remove bullet points */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333; /* Dark background color */
-  display: flex; /* Arrange items horizontally */
-}
+    /* Basic reset to remove browser default spacing */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-/* Style the navigation links */
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none; /* Remove default underline */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    /* Container for the navbar */
+    .navbar {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between; /* Pushes logo to left and menu to right */
+      align-items: center; /* Vertically center the items */
+      padding: 0 20px;
+    }
 
-/* Change color when hovering over links */
-.navbar li a:hover {
-  background-color: #111; /* Darker shade on hover */
-  transition: 0.3s; /* Smooth color transition */
-}
+    /* Style for the Logo */
+    .navbar .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Navigation list styles */
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Keeps menu items horizontal */
+    }
+
+    /* Individual link styles */
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 20px 15px;
+      text-decoration: none;
+    }
+
+    /* Hover effect */
+    .navbar li a:hover {
+      background-color: #111;
+      transition: 0.3s;
+    }
