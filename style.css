@@ -3,21 +3,23 @@
   list-style-type: none; /* Remove bullet points */
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Clear floats if necessary */
-  background-color: #333; /* Set background color */
-  display: flex; /* Use Flexbox for horizontal alignment */
+  overflow: hidden;
+  background-color: #333; /* Dark background color */
+  display: flex; /* Arrange items horizontally */
 }
 
 /* Style the navigation links */
 .navbar li a {
-  display: block; /* Make the whole area clickable */
-  color: white; /* Set text color */
+  display: block;
+  color: white;
   text-align: center;
-  padding: 14px 20px; /* Add internal spacing */
-  text-decoration: none; /* Remove underline */
+  padding: 14px 20px;
+  text-decoration: none; /* Remove default underline */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Change color when hovering over links */
 .navbar li a:hover {
-  background-color: #111; /* Darker background on hover */
+  background-color: #111; /* Darker shade on hover */
+  transition: 0.3s; /* Smooth color transition */
 }
